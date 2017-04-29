@@ -12,7 +12,8 @@ $(document).ready(function() {
   });
 
   $('input').on('click', function() {
-    $('input').removeClass('error')
-  });
+    // $('input').removeClass('error') -- will remove error class from both elements
+    $(this).removeClass('error')
+  })
 
 });
